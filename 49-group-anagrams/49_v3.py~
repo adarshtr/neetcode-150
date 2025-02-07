@@ -1,0 +1,11 @@
+strs = ["eat","tea","tan","ate","nat","bat"]
+
+def groupAnagrams(strs):
+    
+
+
+def getHashKeyForStr(s,hashKey):
+    hashKey = [0] * 26
+    for i in s:
+        hashKey[i - 97] += 1
+    return hashKey

@@ -1,0 +1,19 @@
+strs = ["eat","tea","tan","ate","nat","bat"]
+
+def groupAnagrams(strs):
+    hashMap = {}
+    for s in strs:
+        hashKey = getHashKeyForStr(s)
+        if hashKey in hashMap:
+            hashMap[hashKey].append(s)
+        else:
+            hashMap[hashKey] = [s]
+    return list(hashMap.values())
+
+def getHashKeyForStr(s):
+    hashKey = [0] * 26
+    for i in s:
+        hashKey[ord(i) - 97] += 1
+    return tuple(hashKey)[[id:05e08f46-816d-4edc-a5c1-3f2c3ee568fe][How I’m Optimizing Life with ADHD: Productivity, Learning & Balance]]
+
+print(groupAnagrams(strs))

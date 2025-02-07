@@ -1,0 +1,14 @@
+import heapq
+
+nums = [1,1,1,2,2,3]
+k = 2
+
+def topKFrequent(nums, k):
+    freqTuplesSet = set()
+    for i in nums:
+        freqTuplesSet.add(i,nums.count(i))
+    lartestTuples = heapq.nlargest(k,freqTuplesSet,key=lambda i: i[1])
+    return list(map(lambda i: i[0], lartestTuples)
+
+
+print(topKFrequent(nums,k)
