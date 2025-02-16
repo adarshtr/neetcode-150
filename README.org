@@ -1,3 +1,5 @@
 * TODOs
 - [ ] Create subfolders based on language used
   + [ ] Write script to move to subfolders
+- [ ] Remove emacs backup files from git
+- [ ] Add emacs backup files to .gitignore
