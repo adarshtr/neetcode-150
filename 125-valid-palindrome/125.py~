@@ -1,0 +1,11 @@
+import string
+
+s = "A man, a plan, a canal: Panama"
+
+
+def isPalindrome(s):
+    sanitisedS = list(filter(lambda x: x in string.ascii_uppercase, s.upper()))
+    print(sanitisedS)
+
+
+isPalindrome(s)
