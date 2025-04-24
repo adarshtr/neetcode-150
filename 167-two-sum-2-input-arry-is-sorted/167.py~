@@ -1,0 +1,6 @@
+# [2,7,11,15] target 9 =>
+
+def findElements(lis, tar):
+    for i in range(0,len(tar)):
+        if (tar - lis[i]) in lis:
+            return [i+1, list.indexOf((tar - lis[i])) + 1]
